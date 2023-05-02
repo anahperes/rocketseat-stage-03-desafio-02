@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap" rel="stylesheet">
+    
+    <!-- DETAILS -->
+    <title>Mentoria Rocket</title>
+
+    <!-- LINK TO CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>avalie a sua mentoria</h1>
+        
+        <p>Chegou a hora de avaliar o seu mentor. Bora lá?</p>
+        
+        <img src="images/img1.png" alt="balão de conversa de desenho animado laranja com cinco estrelas posicionadas horizontalmente, sendo três brancas e duas cinza">
+   
+        <div class="legend">
+            <legend>Informações pessoais</legend>
+        </div>
+    </header>
+    
+    <form id="mentorship-form">
+        <!-- INFORMAÇÕES PESSOAIS -->
+        <fieldset>
+            <div class="two-col">
+                <div class="input-wrapper">
+                    <label for="mentorship-mentored-name">Nome</label>
+                    <input type="text" name="" id="mentorship-mentored-name" required>
+                </div>
+
+                <div class="input-wrapper">
+                    <label for="mentorship-mentored-surname">Sobrenome</label>
+                    <input type="text" name="" id="mentorship-mentored-surname" required>
+                </div>
+            </div>
+
+            <div class="input-wrapper">
+                <label for="mentorship-mentored-email">Email<span>(digite um email válido)</span></label>
+                <input type="email" name="" id="mentorship-mentored-email" required>
+            </div>
+        </fieldset>
+
+        <!-- INFORMAÇÕES DO MENTOR -->
+        <fieldset>
+            <legend>Informações do mentor</legend>
+            
+            <div class="select-wrapper"> <!-- TROQUEI O INPUT-WRAPPER PQ ACHO Q VOU USAR DEPOIS-->
+                <label for="mentorship-mentor-options">Selecione quem foi o seu mentor</label>
+                <select name="" id="mentorship-mentor-options" required>
+                    <option value="mariadasilva">Maria da Silva</option>
+                    <option value="joaodasilva">João da Silva</option>
+                    <option value="josedasilva">José da Silva</option>
+                </select>
+            </div>
+
+            <div class="input-wrapper">
+                <label for="mentorship-mentor-feedback">Feedback sobre o mentor</label>
+                <textarea name="" id="mentorship-mentor-feedback" required></textarea>
+            </div>
+
+            <div class="checkbox-wrapper">
+                <input type="checkbox" name="" id="mentorship-doubts">
+                <label for="mentorship-doubts">Todas as minhas dúvidas foram esclarecidas durante a mentoria.</label>
+            </div>
+        </fieldset>
+
+        <!-- AGENDANDO A SUA PRÓXIMA MENTORIA -->
+        <fieldset>
+            <legend>Agendando próxima mentoria</legend>
+            <div class="three-col">
+                <div class="input-wrapper">
+                    <label for="mentorship-schedule-date">Data<span>(DD/MM/AAAA)</span></label>
+                    <input type="date" name="" id="mentorship-schedule-date">
+                </div>
+
+                <div class="input-wrapper">
+                    <label for="mentorship-schedule-time-start">Das </label>
+                    <input type="time" name="" id="mentorship-schedule-time-start">
+                </div>
+
+                <div class="input-wrapper">
+                    <label for="mentorship-schedule-time-end">Até</label>
+                    <input type="time" name="" id="mentorship-schedule-time-end">
+                </div>
+            </div>
+        </fieldset>
+
+        <!-- SUBMIT BUTTON -->
+        <div class="button-wrapper">
+            <input type="submit" value="SALVAR" id="button" form="mentorship-form">
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,284 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* BODY SETUP */
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    background: #BFD7E4;
+    height: 1440px;
+}
+
+/* HEADER BACKGROUND CREATION */
+body::before {
+    content: '';
+    width: 100%;
+    height: 465px;
+    background: #293241;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+/* HEADER SETUP */
+header {
+    width: 750px;
+    margin: auto;
+    margin-top: 105px;
+    text-align: center;
+}
+
+/* H1, LEGEND TEXT SETUP */
+h1, legend, #button {
+    font-family: 'Staatliches', cursive;
+    font-weight: 400;
+}
+
+/* GENERAL TEXT INPUT SETUP */
+textarea, input, select {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: #C1BCCC;
+}
+
+/* GENERAL TEXT INPUT WHILE IN FOCUS SETUP */
+textarea:focus, input:focus, select:focus {
+    color: #4E4958;
+}
+
+/* H1 SETUP */
+h1 {
+    font-size: 36px;
+    line-height: 45px;
+    color: #FFFFFF;
+
+    margin-bottom: 0px;
+}
+
+/* HEADER PARARGRAPH SETUP */
+p {
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    margin-top: 0px;
+    margin-bottom: 2px;
+}
+
+/* IMG SETUP */
+img {
+    margin: 19px auto 30px;
+}
+
+/* FORM SETUP */
+form {
+    width: 750px;
+    max-height: 1075px;
+    background: #FFFFFF;
+    border-radius: 0px 0px 20px 20px;
+    margin: auto;
+    padding: 30px 64px 64px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* FIELDSET SETUP */
+fieldset {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* .TWO-COL SETUP */
+.two-col {
+    display: flex;
+    gap: 22px;
+}
+
+.two-col .input-wrapper {
+    width: 100%;
+}
+/* THREE COL SETUP */
+.three-col {
+    display: flex;
+    gap: 22px;
+}
+
+.three-col > div:nth-child(1) {
+    width: 100%;
+}
+
+/* .INPUT-WRAPPER + .SELECT-WRAPPER SETUP */
+.input-wrapper, .select-wrapper {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* LEGEND BACKGOUND SETUP */
+.legend {
+    width: 750px;
+    height: 133px;
+    background: #F67669;
+    border-radius: 20px 20px 0px 0px;
+}
+
+/* LEGEND SETUP "INFORMAÇÕES PESSOAIS */
+.legend legend {
+    font-size: 24px;
+    line-height: 34px;
+    color: #FFFFFF;
+    text-align: center;
+    border: none;
+    padding-top: 50px;
+}
+
+/* OTHER LEGENDS */
+legend {
+    font-size: 24px;
+    line-height: 34px;
+    color: #253B51;
+    text-align: center;
+    border-bottom: 1px solid #E6E6F0;
+    width: 100%;
+    padding-bottom: 10px;               /* DEPOIS PRECISA DAR DISPLAY:FLEX COLUM NO FORM PRA SEPARAR OS FIELDSETS */
+}
+
+/* LABEL SETUP */
+label {
+    font-size: 14px;
+    line-height: 24px;
+    color: #4E4958;
+}
+
+/* LABEL SPAN SETUP */
+label span {
+    font-size: 12px;
+    line-height: 20px;
+    color: #C1BCCC;
+    margin-left: 6px;               /* VALUE WAS 9.12PX ON THE 1ST AND 6.21 ON THE 2ND. I CHOSE 6PX AS STANDARD */
+}
+
+/* INPUT SETUP */
+.input-wrapper input {
+    width: 100%;
+    height: 55px;
+    border: 1px solid #E6E6F0;
+    border-radius: 8px;
+    background: #FAFAFC;
+}
+
+/* INPUT IN FOCUS SETUP */
+input:focus, select:focus, textarea:focus {
+    outline: 1px solid #4E4958;
+}
+
+/* INPUT INVALID SETUP */
+input:invalid, select:invalid, textarea:invalid {
+    outline: 1px solid #F67669;
+}
+
+/* INPUT AND SELECT TEXT PADDING */
+input, select, textarea {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* SELECT SETUP */
+select {
+    appearance: none;
+    width: 50%;
+    height: 55px;
+    border: 1px solid #E6E6F0;
+    border-radius: 8px;
+    background: #FAFAFC;
+    background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_1_54)'%3E%3Cpath d='M8 10L12 14L16 10' stroke='%239C98A6' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_1_54'%3E%3Crect width='24' height='24' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-position: top 50% right 20px;
+}
+
+/* TEXTAREA SETUP */
+textarea {
+    width: 100%;
+    height: 150px;
+    border: 1px solid #E6E6F0;
+    border-radius: 8px;
+    background: #FAFAFC;  
+}
+
+/* .CHECBOX-WRAPPER SETUP = */
+.checkbox-wrapper {
+    display: flex ;
+    position: relative;
+    margin-top: 15px;
+}
+
+/* CHECBOX INPUT SETUP, WHICH IS A SORT OF A PLACEHOLDER TO LABEL::BEFORE */
+.checkbox-wrapper input {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 24px;
+    height: 24px;
+    opacity: 0%;
+}
+
+/* CHECKBOX LABEL SETUP */
+.checkbox-wrapper label {
+    display: flex;
+    gap: 8px;
+    margin: 0px;
+    align-items: center;
+}
+
+/* CHECKBOX LABEL::BEFORE SETUP */
+.checkbox-wrapper label::before {
+    content: '';
+    width: 24px;
+    height: 24px;
+    background: #FAFAFC;
+    border: 1px solid #E6E6F0;
+    border-radius: 8px;
+    display: block;
+}
+
+/* CHECKBOX INPUT:CHEKED SETUP */
+.checkbox-wrapper input:checked + label::before {
+    background-image: url("data:image/svg+xml,%3Csvg width='18' height='14' viewBox='0 0 18 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.59 10.58L1.42 6.41L0 7.82L5.59 13.41L17.59 1.41L16.18 0L5.59 10.58Z' fill='%23F67669'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* CHECKBOX INPUT:FOCUS SETUP */
+.checkbox-wrapper input:focus + label::before {
+    outline: 1px solid #4E4958;
+}
+
+/* /BUTTON-WRAPPER SETUP */
+.button-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+/* SUBMIT BUTTON SETUP */
+.button-wrapper #button {
+    width: 622px;
+    height: 50px;
+    background: #F67669;
+    border-radius: 8px;
+    font-size: 20px;
+    line-height: 26px;
+    color: #FFFFFF;
+    border: none;
+}
+
+/* BUTTON HOVER */
+#button:hover {
+    background: #eb7164;
+}
